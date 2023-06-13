@@ -36,7 +36,7 @@ def install_goundingdino():
 
     def verify_dll(install_local=True):
         try:
-            from groundingdino import _C
+            import groundingdino
             print("GroundingDINO dynamic library have been successfully built.")
             return True
         except Exception:
